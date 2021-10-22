@@ -13,13 +13,18 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { dialogeditorialComponent } from './home/dialog/dialogeditorial.component';
+import {FormsModule} from '@angular/forms';
+import { FormatWidth } from '@angular/common';
+import {MatSelectModule} from '@angular/material/select';
+import { DialogDeleteComponent } from './common/delete/dialogdelete.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    dialogeditorialComponent
+    dialogeditorialComponent,
+    DialogDeleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,10 @@ import { dialogeditorialComponent } from './home/dialog/dialogeditorial.componen
     MatDialogModule,
     MatButtonModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule,
+    MatSelectModule
+
 
   ],
   providers: [],

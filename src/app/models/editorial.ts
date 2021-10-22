@@ -1,5 +1,5 @@
 export interface editorial{
-  //  id: string;
+   id: number;
     titulo: string;
     descripcion: string;
     autor: string;

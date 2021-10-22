@@ -33,4 +33,14 @@ export class ApiEditorialService {
     return this.http.post<Response>(this.url,EDITORIAL,httpOptions);
   }
 
+    /////EDIT PUT
+    edit(EDITORIAL:editorial) : Observable<Response>{
+      return this.http.put<Response>(this.url,EDITORIAL,httpOptions);
+    }
+
+
+     /////DELETE
+   DELETE(id:number) : Observable<Response>{
+        return this.http.delete<Response>(`${this.url}${id}`);
+      }
 }
